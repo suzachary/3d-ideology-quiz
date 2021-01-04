@@ -2,12 +2,26 @@
 <html>
     <head>
         <title>Ideology Quiz</title>
+
+        <!--imports-->
+        <script src="vis.js"></script>
+        <link href="vis.css" rel="stylesheet" type="text/css" />
+        <link href="IdeologyQuiz.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <h1>Ideology Quiz</h1>
 
+        <!--The actual question, or the name of the user's ideology-->
         <div id="quiz"></div>
+
+        <!--The graph displaying the user's ideology-->
+        <div id="graph"></div>
+
+        <!--The button that either submits user answers or restarts the quiz-->
         <button id="submit" onclick="next()">Submit</button>
+
+        <!--Error messages go here-->
+        <div id="errors"></div>
 
         <script src="IdeologyQuiz.js"></script>
     </body>
